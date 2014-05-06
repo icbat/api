@@ -8,13 +8,13 @@ Generate a Token
 To access the API, you must first generate an API token. To do that, go to the "API Tokens" tab under "My Account" on CurseForge.
 
 
-Authorization
+Authentication
 -------------
 To authenticate with the API, you must provide your generate token using the `X-Api-Token` header.
 
 
-Game Dependencies
------------------
+Game Dependencies API
+---------------------
 To retrieve a list of game dependencies issue a GET request to `/api/game/dependencies`. It will return an array of json objects containing the following data:
 
 ```js
@@ -26,8 +26,8 @@ To retrieve a list of game dependencies issue a GET request to `/api/game/depend
 ```
 
 
-Game Versions
--------------
+Game Versions API
+-----------------
 To retrieve a list of game versions issue a GET request to `/api/game/versions`. It will return an array of json objects containing the following data:
 
 ```js
@@ -40,8 +40,8 @@ To retrieve a list of game versions issue a GET request to `/api/game/versions`.
 ```
 
 
-Uploading a File to a Project
------------------------------
+Project Upload File API
+-----------------------
 To upload a file, issue a POST multipart/form-data request to `/api/projects/<projectID>/upload-file`, containing two fields: `metadata` and `file`, which must be the actual file.
 
 `metadata` must contain a json object with the following fields:
