@@ -2,13 +2,16 @@ CurseForge API
 ==============
 The CurseForge API allows users to automate managing their projects, and retrieve data such as game versions and dependencies from CurseForge.
 
+
 Generate a Token
 ----------------
-To access the API, you must generate an API token. This can be done by going to "My Account" and going to the "API Tokens" tab.
+To access the API, you must first generate an API token. To do that, go to the "API Tokens" tab under "My Account" on CurseForge.
+
 
 Authorization
 -------------
 To authenticate with the API, you must provide your generate token using the `X-Api-Token` header.
+
 
 Game Dependencies
 -----------------
@@ -22,6 +25,7 @@ To retrieve a list of game dependencies issue a GET request to `/api/game/depend
 }
 ```
 
+
 Game Versions
 -------------
 To retrieve a list of game versions issue a GET request to `/api/game/versions`. It will return an array of json objects containing the following data:
@@ -34,6 +38,7 @@ To retrieve a list of game versions issue a GET request to `/api/game/versions`.
     slug: "1-8-4"
 }
 ```
+
 
 Uploading a File to a Project
 -----------------------------
