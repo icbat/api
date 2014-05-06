@@ -24,7 +24,7 @@ To retrieve a list of game dependencies issue a GET request to `/api/game/depend
 
 Game Versions
 -------------
-To retrieve a list of game versions issue a GET request to `/api/game/version`. It will return an array of json objects containing the following data:
+To retrieve a list of game versions issue a GET request to `/api/game/versions`. It will return an array of json objects containing the following data:
 
 ```js
 {
