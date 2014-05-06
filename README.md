@@ -42,7 +42,7 @@ To retrieve a list of game versions issue a GET request to `/api/game/versions`.
 
 Project Upload File API
 -----------------------
-To upload a file, issue a POST multipart/form-data request to `/api/projects/<projectID>/upload-file`, containing two fields: `metadata` and `file`, which must be the actual file.
+To upload a file, issue a POST multipart/form-data request to `/api/projects/<projectID>/upload-file`, containing two fields: `metadata` and `file`, which must be the actual file. The ID of your project will be in the URL when you go to its overview page.
 
 `metadata` must contain a json object with the following fields:
 
