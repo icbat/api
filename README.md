@@ -8,7 +8,7 @@ To access the API, you must generate an API token. This can be done by going to 
 
 Authorization
 -------------
-To authenticate with the API, you must provide your generate token using the X-Api-Token header.
+To authenticate with the API, you must provide your generate token using the `X-Api-Token` header.
 
 Game Dependencies
 -----------------
