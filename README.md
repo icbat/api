@@ -37,4 +37,22 @@ To retrieve a list of game versions issue a GET request to `/api/game/versions`.
 
 Uploading a File to a Project
 -----------------------------
-TODO
+To upload a file, issue a POST multipart/form-data request to `/api/projects/<projectID>/upload-file`, containing two fields: `metadata` and `file`, which must be the actual file.
+
+`metadata` must contain a json object with the following fields:
+
+```js
+{
+    changelog: "A plaintext string describing changes.",
+    gameVersions: [157, 158], // A list of supported  game versions, see the Game Versions API for details.
+    releaseType: "alpha" // One of "alpha", "beta", "release".
+}
+```
+
+On successful upload, returns a json object containing the new file's ID:
+
+```js
+{
+    id: 20402
+}
+```
