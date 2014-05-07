@@ -33,7 +33,7 @@ To retrieve a list of game versions issue a GET request to `/api/game/versions`.
 ```js
 {
     id: 158,
-    gameDependencyID: 42, // This field will be omitted if the version doens't belong to a dependency.
+    gameDependencyID: 42, // This field will be omitted if the version doesn't belong to a dependency.
     name: "1.8.4",
     slug: "1-8-4"
 }
