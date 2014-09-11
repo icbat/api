@@ -49,7 +49,9 @@ To upload a file, issue a POST multipart/form-data request to `/api/projects/<pr
 ```js
 {
     changelog: "A plaintext string describing changes.",
-    gameVersions: [157, 158], // A list of supported  game versions, see the Game Versions API for details.
+    displayName: "Foo", // Optional: A friendly display name used on the site if provided.
+    parentFileID: 42, // Optional: The parent file of this file.
+    gameVersions: [157, 158], // A list of supported game versions, see the Game Versions API for details. Not supported if parentFileID is provided.
     releaseType: "alpha" // One of "alpha", "beta", "release".
 }
 ```
