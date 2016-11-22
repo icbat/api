@@ -48,7 +48,8 @@ To upload a file, issue a POST multipart/form-data request to `/api/projects/<pr
 
 ```js
 {
-    changelog: "A plaintext string describing changes.",
+    changelog: "Plain text, HTML or Markdown changelog",
+    changelogType: "markdown" // Optional: Set to text, html or markdown to change changelog format. Defaults to text.
     displayName: "Foo", // Optional: A friendly display name used on the site if provided.
     parentFileID: 42, // Optional: The parent file of this file.
     gameVersions: [157, 158], // A list of supported game versions, see the Game Versions API for details. Not supported if parentFileID is provided.
