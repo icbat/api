@@ -1,3 +1,3 @@
 CurseForge API
 ==============
-This repository will soon be deleted. Please see https://www.curseforge.com/docs/api for updated documentation.
+This repository is no longer used. Please see https://www.curseforge.com/docs/api for updated documentation.
