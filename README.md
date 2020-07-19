@@ -2,4 +2,4 @@ CurseForge API
 ==============
 This repository is no longer used.
 
-Please see https://www.curseforge.com/docs/api for updated documentation.
+Please see https://authors.curseforge.com/knowledge-base/projects/529-api for updated documentation.
